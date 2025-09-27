@@ -1,6 +1,7 @@
 #include <WiFi.h>
 #include <WebServer.h>
-#include "secrets.h"  
+#include <ESPmDNS.h>
+#include "secrets.h"
 
 // definição do pino do sensor de umidade
 const int pinoSensorUmidade = 34;
@@ -11,22 +12,24 @@ WebServer server(80);
 int historico[MAX_HISTORICO];
 int indexHistorico = 0;
 
-
-
 // Função que retorna leitura atual no sensor de umidade de solo (4095 = totalmente seco, 0 = molhado)
 int leituraUmidade()
 {
   return analogRead(pinoSensorUmidade);
 }
 
-void handleUmidade() {
+void handleUmidade()
+{
+  server.sendHeader("Access-Control-Allow-Origin", "*");
+
   int umidade = leituraUmidade();
 
   // adiciona ao histórico de leituras
   historico[indexHistorico] = umidade;
   indexHistorico = (indexHistorico + 1) % MAX_HISTORICO;
-
+  // Retorna a leitura em formato JSON
   String json = "{\"umidade\":" + String(umidade) + "}";
+  // servidor envia resposta
   server.send(200, "application/json", json);
 }
 
@@ -46,10 +49,16 @@ void setup()
     Serial.print(".");
   }
   Serial.println("");
-  //busca o IP local
+  // busca o IP local
   Serial.print("Conectado! IP: ");
   Serial.println(WiFi.localIP());
 
+   // inicia responder mDNS (nome: esp32)
+  if (!MDNS.begin("esp32")) {
+    Serial.println("Erro MDNS");
+  } else {
+    Serial.println("mDNS iniciado: esp3.local");
+  }
 
   server.on("/umidade", handleUmidade);
   server.begin();
