@@ -34,8 +34,8 @@ Firmware para o ESP32 que lê um sensor de umidade do solo resistivo (higrômetr
 1. Hardware
 
 - Fazer a ligação entre o ESP32 (ou outra placa de prototipagem, ex: Arduino) e o sensor de umidade de solo
-
 - Sensor de umidade de solo
+
 ![alt text](image.png)
 
 - Esp32 DEVKIT V1
