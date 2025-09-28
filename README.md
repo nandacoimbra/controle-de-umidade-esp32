@@ -1,6 +1,6 @@
 # 🌱 Monitoramento de Umidade de Planta – ESP32
 
-Firmware para o ESP32 que lê um sensor de umidade do solo resistivo (higrômetro) e disponibiliza os dados via servidor HTTP.  Funciona em conjunto com o frontend React (link para repositótio) para exibir leituras de umidade do solo a cada 15 min, ou quando o usuário solicitar.
+Firmware para o ESP32 que lê um sensor de umidade do solo resistivo (higrômetro) e disponibiliza os dados via servidor HTTP.  Funciona em conjunto com o frontend React (https://github.com/nandacoimbra/controle-umidade-react) para exibir leituras de umidade do solo a cada 15 min, ou quando o usuário solicitar.
 
 ## Funcionalidades
 
@@ -31,12 +31,22 @@ Firmware para o ESP32 que lê um sensor de umidade do solo resistivo (higrômetr
 
 ## Como Usar
 
-1. Clonar este repositório  
+1. Hardware
+
+- Fazer a ligação entre o ESP32 (ou outra placa de prototipagem, ex: Arduino) e o sensor de umidade de solo
+
+- Sensor de umidade de solo
+![alt text](image.png)
+
+- Esp32 DEVKIT V1
+![alt text](image-1.png)
+
+2. Clonar este repositório  
 ```bash
-git clone https://github.com/seu-usuario/esp32-umidade.git
-cd esp32-umidade
+git clone https://github.com/nandacoimbra/controle-de-umidade-esp32.git
+cd controle-de-umidade-esp32
 ```
-2. Configurar Wi-Fi
+3. Configurar Wi-Fi
 
 No arquivo secrets.h, informe seu SSID e senha:
 ```bash
@@ -44,7 +54,7 @@ No arquivo secrets.h, informe seu SSID e senha:
 #define WIFI_PASSWORD "SuaSenha"
 
 ```
-3. Instalar Bibliotecas Necessárias no Arduino IDE ou PlatformIO
+4. Instalar Bibliotecas Necessárias no Arduino IDE ou PlatformIO
 - WiFi.h
 - WebServer.h
 - ESPmDNS.h
@@ -52,12 +62,12 @@ No arquivo secrets.h, informe seu SSID e senha:
 - NTPClient.h
 - WiFiUdp.h
 
-4. Upload do Código
+5. Upload do Código
 - Conecte o ESP32 ao PC
 - Abra o projeto no Arduino IDE ou VS Code + PlatformIO
 - Selecione a porta correta e faça upload
 
-5. Acessar o Servidor
+6. Acessar o Servidor
 
 Você pode acessar via:
 
