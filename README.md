@@ -34,12 +34,10 @@ Firmware para o ESP32 que lê um sensor de umidade do solo resistivo (higrômetr
 1. Hardware
 
 - Fazer a ligação entre o ESP32 (ou outra placa de prototipagem, ex: Arduino) e o sensor de umidade de solo
-- Sensor de umidade de solo
+- Sensor de umidade de solo: https://www.eletrogate.com/modulo-sensor-de-umidade-de-solo?utm_source=Site&utm_medium=GoogleMerchant&utm_campaign=GoogleMerchant&gad_source=1&gad_campaignid=20223015315&gbraid=0AAAAADqxjs_W07OrI23xxQ8P3XEx7OTXp&gclid=CjwKCAjwlt7GBhAvEiwAKal0csbwawia5ncz36qIprLN2ES9g4lQRZlOoCr_R7jeyA1uTG1CA9zG_BoCTpsQAvD_BwE
 
-![alt text](image.png)
+- Esp32 DEVKIT V1: https://www.eletrogate.com/modulo-wifi-esp32-bluetooth-30-pinos?utm_source=Site&utm_medium=GoogleMerchant&utm_campaign=GoogleMerchant&gad_source=1&gad_campaignid=20223015315&gbraid=0AAAAADqxjs_W07OrI23xxQ8P3XEx7OTXp&gclid=CjwKCAjwlt7GBhAvEiwAKal0ckObaD5JnK5v7I5OWmhnYPM14FHohfQC7CcXKu8TYUJYJzauPnZHbxoCt90QAvD_BwE
 
-- Esp32 DEVKIT V1
-![alt text](image-1.png)
 
 2. Clonar este repositório  
 ```bash
