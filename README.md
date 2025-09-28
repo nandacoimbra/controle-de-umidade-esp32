@@ -38,6 +38,8 @@ Firmware para o ESP32 que lê um sensor de umidade do solo resistivo (higrômetr
 
 - Esp32 DEVKIT V1: https://www.eletrogate.com/modulo-wifi-esp32-bluetooth-30-pinos?utm_source=Site&utm_medium=GoogleMerchant&utm_campaign=GoogleMerchant&gad_source=1&gad_campaignid=20223015315&gbraid=0AAAAADqxjs_W07OrI23xxQ8P3XEx7OTXp&gclid=CjwKCAjwlt7GBhAvEiwAKal0ckObaD5JnK5v7I5OWmhnYPM14FHohfQC7CcXKu8TYUJYJzauPnZHbxoCt90QAvD_BwE
 
+- Tutorial para conexão no Arduino (adaptar ao esp32)
+https://www.youtube.com/watch?v=QPH9aXS2bio&pp=ygUUc2Vuc29yIHVtaWRhZGUgZXNwMzI%3D
 
 2. Clonar este repositório  
 ```bash
