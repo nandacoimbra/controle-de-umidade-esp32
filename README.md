@@ -77,6 +77,6 @@ Você pode acessar via:
 
 7 - Protótipo
 
-<div align="center">
+<div align="left">
   <img src="https://github.com/user-attachments/assets/0a2b3d54-97c4-40f8-8f8a-f95326b8bddd" alt="image" width="249" height="399">
 </div>
