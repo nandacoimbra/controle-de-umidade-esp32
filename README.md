@@ -1,4 +1,4 @@
-# 🌱 Monitoramento de Umidade de Planta – ESP32
+# 🌱 Monitoramento de Umidade de Solo – ESP32
 
 Firmware para o ESP32 que lê um sensor de umidade do solo resistivo (higrômetro) e disponibiliza os dados via servidor HTTP.  Funciona em conjunto com o frontend React (https://github.com/nandacoimbra/controle-umidade-react) para exibir leituras de umidade do solo a cada 15 min, ou quando o usuário solicitar.
 
@@ -74,3 +74,6 @@ Você pode acessar via:
 - `http://<IP_do_ESP>/umidade`
 - `http://<IP_do_ESP>/historico`
 - `http://<IP_do_ESP>/limpar` (requisição POST)
+
+7 - Protótipo
+<img width="449" height="599" alt="image" src="https://github.com/user-attachments/assets/0a2b3d54-97c4-40f8-8f8a-f95326b8bddd" />
