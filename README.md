@@ -76,4 +76,7 @@ Você pode acessar via:
 - `http://<IP_do_ESP>/limpar` (requisição POST)
 
 7 - Protótipo
-<img width="449" height="599" alt="image" src="https://github.com/user-attachments/assets/0a2b3d54-97c4-40f8-8f8a-f95326b8bddd" />
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/0a2b3d54-97c4-40f8-8f8a-f95326b8bddd" alt="image" width="249" height="399">
+</div>
